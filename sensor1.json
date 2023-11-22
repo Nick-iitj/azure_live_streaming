@@ -1,0 +1,19 @@
+{
+    "modulesDeployment": {
+        "schemaVersion": "1.0",
+        "properties.desired": {
+            "modules": {
+                "temperatureSensor": {
+                    "type": "docker",
+                    "settings": {
+                        "image": "mcr.microsoft.com/azureiotedge-sensor:1.4",
+                        "createOptions": "{}"
+                    },
+                    "status": "running",
+                    "restartPolicy": "always",
+                    "version": "1.0"
+                }
+            }
+        }
+    }
+}
